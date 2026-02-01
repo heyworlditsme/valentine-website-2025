@@ -240,3 +240,16 @@ function setupMusicPlayer() {
         }
     });
 } 
+
+window.addEventListener("DOMContentLoaded", () => {
+  const noBtn1 = document.getElementById("noBtn1");
+  const noBtn3 = document.getElementById("noBtn3");
+
+  if (noBtn1) {
+    noBtn1.addEventListener("mouseover", () => moveButton(noBtn1));
+  }
+
+  if (noBtn3) {
+    noBtn3.addEventListener("mouseover", () => moveButton(noBtn3));
+  }
+});
